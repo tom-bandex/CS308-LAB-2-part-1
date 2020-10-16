@@ -6,6 +6,13 @@ positive number. */
 #include <math.h>
 #include<ctype.h>
 //comment
+
+void negsqr(int n)  {
+	n=-1*n;
+	printf("Sqrt of %d is %fi\n",n,sqrt(n));
+	printf("End of program. Exiting\n");
+	return;
+}
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
@@ -16,8 +23,9 @@ int main(int argc, char* argv[]) {
 	int input = atoi(argv[1]);
 	if(input<0)
 	{
-		printf("not a valid number\n");
-		printf("End of program. Exiting");
+		//printf("not a valid number\n");
+		//printf("End of program. Exiting");
+		negsqr(input);		
 		return(0);
 	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
