@@ -9,14 +9,14 @@ positive number. */
 
 void negsqr(int n)  {
 	n=-1*n;
-	printf("DEBUG: Sqrt of %d is %fi\n",n,sqrt(n));
-	printf("DEBUG: End of program. Exiting\n");
+	printf("NEG: Sqrt of %d is %fi\n",n,sqrt(n));
+	printf("NEG: End of program. Exiting\n");
 	return;
 }
 int main(int argc, char* argv[]) {
 	
 	if (argc != 2) {
-		printf("DEBUG: Usage: sqrt input\n\n");
+		printf("NEG: Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
@@ -28,8 +28,8 @@ int main(int argc, char* argv[]) {
 		negsqr(input);		
 		return(0);
 	}
-	printf("DEBUG: Sqrt of %d is %f\n",input,sqrt(input));
-	printf("DEBUG: End of program. Exiting");
+	printf("NEG: Sqrt of %d is %f\n",input,sqrt(input));
+	printf("NEG: End of program. Exiting");
 	return(0);
 
 } // end main
