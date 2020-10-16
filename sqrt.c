@@ -4,6 +4,7 @@ positive number. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include<ctype.h>
 //comment
 int main(int argc, char* argv[]) {
 	
@@ -13,6 +14,12 @@ int main(int argc, char* argv[]) {
 	}
 
 	int input = atoi(argv[1]);
+	if(input<0)
+	{
+		printf("not a valid number\n");
+		printf("End of program. Exiting");
+		return(0);
+	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
 	printf("End of program. Exiting");
 	return(0);
